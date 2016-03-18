@@ -1,0 +1,62 @@
+*
+  box-sizing: border-box;
+body
+  overflow-x: hidden;
+section
+  background-color: $white
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: $black
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  .wrapper
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: "Roboto";
+    h2
+      font-size: 2.5em;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 4px
+      font-family: "Roboto Slab"
+    p
+      font-size: 1.2em;
+      text-align: justify;
+      line-height: 1.5;
+      font-weight: 300
+
+section#home
+  background-image: url('../img/bg.jpg');
+  .wrapper
+    h1
+      font-size: 5em;
+      font-family: "Roboto Slab"
+      color: $white
+      line-height: 1
+      padding: 0.3em 0.5em
+      border: 10px solid $white
+      text-transform: uppercase;
+      font-weight: 900;
+      background-color: rgba($white, 0.1)
+      text-shadow: 0px 0px 40px rgba($black, 0.5)
+      @media (max-width: 560px)
+        font-size: 3.5em
+    p
+      font-size: 1.25em
+      font-family: "Roboto"
+      font-weight: 200;
+      letter-spacing: 5px;
+      color: $white;
+      text-align: center;
+
+section#section2
+  background-color: $red;
+  color: $white;
