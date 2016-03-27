@@ -11,6 +11,13 @@ nav
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &.sticky-nav
+    position: fixed;
+    width: 100%
+    max-width: 100%
+    margin: 0
+    padding: 1em 3em
+    background-color: rgba($black, 0.5)
   span.logo
     font-size: 2em;
     font-weight: 900;
@@ -43,7 +50,7 @@ nav
         padding-bottom: 0.5em
         border-bottom: 3px solid
 
-@media (max-width: 720px)
+@media (max-width: 780px)
   nav
     flex-wrap: wrap;
     .hamburger-menu
