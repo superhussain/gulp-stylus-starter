@@ -1,6 +1,7 @@
 (function ($) {
   jQuery(document).ready(function ($) {
     scroll();
+    navScroll();
     hamburger();
     $(window).resize(function(e) {
       resizeFix();
@@ -30,4 +31,15 @@ var resizeFix = function() {
   } else {
     $('nav .navbar').css({'display': 'none'});
   }
+};
+
+var navScroll = function() {
+  $(window).on('scroll', function() {
+    var vscroll = document.body.scrollTop;
+    if (vscroll > 100) {
+      $('nav').addClass('sticky-nav');
+    } else {
+      $('nav').removeClass('sticky-nav');
+    }
+  });
 };
